@@ -1,0 +1,90 @@
+<body style="background-color:dimgrey;">
+<img src="img.jpg" alt="">
+    <div style="margin-top: 10%;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h3 style="color: white;">ยันยืนตัวเลขผู้ติดเชื้อ</h3>
+                <h1 style="color: deeppink;"><b> COVID-19</b></h1>
+                <h3 style="color: white;">ทั้งหมดในประเทศไทย</h3>
+            </div>
+            <div class="col">
+                <div class="card text-white mb-3" style="max-width: 90rem; background-color:deeppink">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title">
+                                    <p>ผู้ติดเชื้อสะสม</p>
+                                </h5>
+
+                                <div class="card"  style="max-width:15rem;">
+                                    <p style="color: black; margin-top:6%; margin-left:5%  "><!--<img src="../public/up.png"
+                                            alt=""> --> <b style="color: deeppink;">▲ </b> เพิ่มขึ้น {{topThai.NewConfirmed}}</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h1 style="margin-top:8%; margin-left:40%; font-size:60px" >{{topThai.Confirmed}}</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(185, 194, 63)">
+                            <div class="card-body">
+                                <center>
+                                    <p style="color: black;">กำลังรักษา</p>
+                                    <h3 style="color: black;">{{topThai.Hospitalized}}</h3>
+
+                                    <div class="card" style="max-width: 6rem;">
+                                        <p style="color: black; margin-top:8%; margin-left:5%">
+                                            <img src="../public/up.png" alt=""><b style="color: rgb(185, 194, 63);">▼</b> ลดลง
+                                            {{topThai.NewHospitalized}}</p>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(64, 136, 74)">
+                            <div class="card-body">
+                                <center>
+                                    <p style="color: white;">หายแล้ว</p>
+                                    <h3 style="color: white;">{{topThai.Recovered}}</h3>
+                    
+                                    <div class="card" style="max-width: 6rem;">
+                                        <p style="color: black; margin-top:8%; margin-left:5%">
+                                            <img src="../public/up.png" alt=""><b  style="color:rgb(64, 136, 74)">▲</b>เพิ่มขึ้น
+                                            {{topThai.NewRecovered}}</p>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(236, 28, 28)">
+                            <div class="card-body">
+                                <center>
+                                    <p style="color:white;">เสียชีวิต</p>
+                                    <h3 style="color: white;">{{topThai.Deaths}}</h3>
+                    
+                                    <div class="card" style="max-width: 6rem;">
+                                        <p style="color: black; margin-top:8%; margin-left:5%">
+                                            <img src="../public/up.png" alt=""><b style="color:rgb(236, 28, 28)">=</b>  คงที่
+                                            {{topThai.NewDeaths}}</p>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div align="right">
+        <small>อัปเดทข้อมูลล่าสุด {{topThai.UpdateDate}}</small></div>
+    </div>
+
+    </div>
+    </div>
+
+</body>

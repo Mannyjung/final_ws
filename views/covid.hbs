@@ -1,0 +1,41 @@
+<div class="container">
+    <p style="margin-top: 5%;">ผู้ติดเชื้อทั่วโลก</p>
+    <h1 style="color: red;">{{topTenConfirm.totalConfirmed}}</h1>
+    <div class="row">
+        <div class="col-4">
+            <p>หายเร็ว</p>
+            <h2 style="color: green;">{{topTenConfirm.totalRecovered}}</h2>
+        </div>
+        <div class="col-4">
+            <p>เสียชีวิต</p>
+            <h2 style="color: red;">{{topTenConfirm.totalDeaths}}</h2>
+        </div>
+    </div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <!--<th scope="col">#</th> -->
+            <th scope="col">ประเทศ</th>
+            <th scope="col" style="color: red;">ติดเชื้อ ▼</th>
+            <th scope="col" style="color: green;">หายดี ▼</th>
+            <th scope="col">ตาย ▼</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {{#each topTenConfirm.statistics}}
+        <tr>
+            <!--<th scope="row"></th>-->
+            <td>{{name}}
+                <p style="color:rgb(247, 132, 66);">{{travel}}</p>
+            </td>
+            <td>{{confirmed}}</td>
+            <td>{{recovered}}</td>
+            <td>{{deaths}}</td>
+        </tr>
+    </tbody>{{/each}}
+</table>
+
+
+</div>
